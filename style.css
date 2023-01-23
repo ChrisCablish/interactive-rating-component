@@ -1,0 +1,41 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    font-size: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    background-color: aquamarine;
+}
+
+submit {
+    background-color: aqua;
+    
+}
+
+.attribution { 
+font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+color: hsl(228, 45%, 44%); 
+}
