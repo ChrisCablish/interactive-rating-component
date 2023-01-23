@@ -6,36 +6,84 @@ body {
     min-height: 100vh;
     justify-content: center;
     flex-direction: column;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    background-color: hsl(213, 19%, 18%);
+    width: 330px;
+    height: 330px;
+    padding: 30px;
+    border-radius: 25px;
+}
+.star-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255,0.1);
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
+form h2 {
+    font-size: 28px;
+    margin: 0px;
+}
 form p {
     font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    margin: 0px;
+    line-height: 25px;
 }
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 li {
     list-style: none;
-    background-color: aquamarine;
+    color: hsl(216, 12%, 54%);
+    background-color:rgba(255, 255, 255,0.1);
+    font-size: 20px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
 submit {
-    background-color: aqua;
-    
+    background-color:hsl(25, 97%, 53%);
+    padding: 10px 25px;;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
 }
 
 .attribution { 
 font-size: 11px; text-align: center; 
+margin-top: 10px;
 }
 
 .attribution a { 
-color: hsl(228, 45%, 44%); 
+color:hsl(25, 97%, 53%); 
 }
