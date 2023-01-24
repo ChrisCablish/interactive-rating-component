@@ -53,10 +53,14 @@ ul {
 
 li {
     list-style: none;
+    
+}
+
+li .rate-btn {
     color: hsl(216, 12%, 54%);
     background-color:rgba(255, 255, 255,0.1);
     font-size: 20px;
-    padding: 10px;
+    padding: 25px;
     height: 30px;
     width: 30px;
     text-align: center;
@@ -65,8 +69,22 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-    
+    border: none;
+}
+
+li .rate-btn:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+li .rate-btn:hover {
+    cursor: pointer;
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+}
+
+li .rate-btn:active {
+    background-color: hsl(217, 12%, 63%);
 }
 
 submit {
@@ -79,11 +97,18 @@ submit {
     font-size: 12px;
 }
 
+submit:hover{
+    cursor: pointer;
+    background-color:white;
+    color: hsl(25, 97%, 53%);
+}
+
+
 .attribution { 
-font-size: 11px; text-align: center; 
-margin-top: 10px;
+    font-size: 11px; text-align: center; 
+    margin-top: 10px;
 }
 
 .attribution a { 
-color:hsl(25, 97%, 53%); 
+    color:hsl(25, 97%, 53%); 
 }
