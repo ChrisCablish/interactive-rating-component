@@ -13,7 +13,7 @@ body {
 
 /*RATING STATE*/
 
-form.rating-state {
+.rating-state {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,11 +35,11 @@ form.rating-state {
     border-radius: 50%;
 }
 
-form h2 {
+h2 {
     font-size: 28px;
     margin: 0px;
 }
-form p {
+p {
     font-size: 15px;
     color: hsl(216, 12%, 54%);
     margin: 0px;
@@ -87,7 +87,7 @@ li .rate-btn:hover {
 }
 
 
-submit {
+button#submit-btn {
     background-color:hsl(25, 97%, 53%);
     padding: 10px 25px;;
     border-radius: 20px;
@@ -95,9 +95,11 @@ submit {
     text-align: center;
     letter-spacing: 2px;
     font-size: 12px;
+    box-shadow: none;
+    border: none;
 }
 
-submit:hover{
+button#submit-btn:hover{
     cursor: pointer;
     background-color:white;
     color: hsl(25, 97%, 53%);
@@ -116,7 +118,7 @@ form.thank-you-state {
     background-color: hsl(213, 19%, 18%);
     width: 330px;
     height: 330px;
-    padding: 30px; 
+    padding: 20px; 
     border-radius: 25px;
 }
 

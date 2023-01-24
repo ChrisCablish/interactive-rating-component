@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
   <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +15,7 @@
 
   <!-- Rating state start -->
 
-  <form class="rating-state">
+  <form type="submit" class="rating-state" id="rating-state">
     <div class="star-icon">
       <img src="images/icon-star.svg" title="A star icon">
     </div>
@@ -27,14 +25,14 @@
       to help us improve our offering!</p>
       <div class="rating-container">
         <ul class="rating">
-          <li><button class="rate-btn" type="button">1</button></li>
-          <li><button class="rate-btn" type="button">2</button></li>
-          <li><button class="rate-btn" type="button">3</button></li>
-          <li><button class="rate-btn" type="button">4</button></li>
-          <li><button class="rate-btn" type="button">5</button></li>
+          <li><button class="rate-btn" type="button" id="number-one">1</button></li>
+          <li><button class="rate-btn" type="button" id="number-two">2</button></li>
+          <li><button class="rate-btn" type="button" id="number-three">3</button></li>
+          <li><button class="rate-btn" type="button" id="number-four">4</button></li>
+          <li><button class="rate-btn" type="button" id="number-five">5</button></li>
         </ul>
       </div>
-    <submit>Submit</submit> 
+    <button type="button"  id="submit-btn" >Submit</button> 
   </form>
   
   <!-- Rating state end -->
@@ -42,7 +40,7 @@
   <!-- Thank you state start -->
 
     <form class="thank-you-state">
-      <div class="img-container">
+      <div class="img-zzzzzzzcontainer">
         <img src="images/illustration-thank-you.svg" title="Thank You">
       </div>
 
@@ -52,30 +50,18 @@
 
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!</p>
-
-
     </form>
 
-
-
-
-
-
-
-
-
-
-  <!--You selected  Add rating here  out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!-->
   <!-- Thank you state end -->
+
+  <!-- Attribution start-->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Chris Cablish</a>.
   </div>
+
+  <!-- Attribution end-->
+
 </body>
 </html>
