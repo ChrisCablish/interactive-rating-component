@@ -11,7 +11,9 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-form {
+/*RATING STATE*/
+
+form.rating-state {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,6 +74,7 @@ li .rate-btn {
     border: none;
 }
 
+
 li .rate-btn:focus {
     background-color: hsl(217, 12%, 63%);
     color: white;
@@ -83,9 +86,6 @@ li .rate-btn:hover {
     color: white;
 }
 
-li .rate-btn:active {
-    background-color: hsl(217, 12%, 63%);
-}
 
 submit {
     background-color:hsl(25, 97%, 53%);
@@ -102,6 +102,63 @@ submit:hover{
     background-color:white;
     color: hsl(25, 97%, 53%);
 }
+
+
+/*THANK YOU STATE*/
+
+
+form.thank-you-state {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(213, 19%, 18%);
+    width: 330px;
+    height: 330px;
+    padding: 30px; 
+    border-radius: 25px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.selected-message {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    background-color:rgba(255, 255, 255,0.1);
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+
+}
+
+form.thank-you-state h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+form.thank-you-state p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 .attribution { 
