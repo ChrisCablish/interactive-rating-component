@@ -29,13 +29,16 @@ numberFiveEl.addEventListener("click", ()=>{
 
 const selection = document.getElementById('number');
 
-
-
-
-
-
 const submitEl = document.getElementById('submit-btn');
 
 submitEl.addEventListener("click", ()=> {
     selection.innerText = `${rating}`;
+    
+    const ratingStateEl = document.getElementById('rating-state').style.display = 'none';
+    const thankYouStateEl = document.getElementById('thank-you-state').style.display = 'flex';
+    
+    
+    
+    /*ratingStateEl.style.display('none');
+    thankYouStateEl.style.display('flex');*/
 })
