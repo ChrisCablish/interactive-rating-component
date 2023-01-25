@@ -1,10 +1,18 @@
+/*GET AND STORE RATING NUMBER ELEMENTS*/
+
 const numberOneEl = document.getElementById('number-one');
+
 const numberTwoEl = document.getElementById('number-two');
+
 const numberThreeEl = document.getElementById('number-three');
+
 const numberFourEl = document.getElementById('number-four');
+
 const numberFiveEl = document.getElementById('number-five');
 
 let rating 
+
+/*EVENT LISTENERS FOR NUMBER BUTTONS*/
 
 numberOneEl.addEventListener("click", ()=>{
     rating = 1
@@ -31,14 +39,12 @@ const selection = document.getElementById('number');
 
 const submitEl = document.getElementById('submit-btn');
 
+/*CLICK EVENT FOR SUBMIT*/
+
 submitEl.addEventListener("click", ()=> {
     selection.innerText = `${rating}`;
     
     const ratingStateEl = document.getElementById('rating-state').style.display = 'none';
     const thankYouStateEl = document.getElementById('thank-you-state').style.display = 'flex';
     
-    
-    
-    /*ratingStateEl.style.display('none');
-    thankYouStateEl.style.display('flex');*/
 })
